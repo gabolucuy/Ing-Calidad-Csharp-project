@@ -16,7 +16,6 @@ namespace UnitTest
       source.Deposit(200.00F);
       Account destination = new Account();
       destination.Deposit(150.00F);
-
       source.TransferFunds(destination, 100.00F);
       Assert.AreEqual(250.00F, destination.Balance);
       Assert.AreEqual(100.00F, source.Balance);
@@ -34,10 +33,9 @@ namespace UnitTest
         Account source = new Account();
         source.Deposit(200.00F);
         Account destination = new Account();
-        destination.Deposit(200.00F);
-        source.TransferFunds(destination, 200.00F);
-           Assert.Throws<Account.InsufficientFundsException>(() => Account.TransferFunds(destination, 200.00F));
-        }
+        destination.Deposit(0.00F);
+        Assert.Throws<Account.InsufficientFundsException>(() => source.TransferFunds(destination, 200.00F));
+      }
    }
 
 }

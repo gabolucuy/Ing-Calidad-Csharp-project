@@ -71,6 +71,7 @@
     <Compile Include="Account.cs" />
     <Compile Include="AccountTest.cs" />
     <Compile Include="Discount.cs" />
+    <Compile Include="DiscountTest.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PersonTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
