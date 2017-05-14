@@ -72,6 +72,7 @@
     <Compile Include="AccountTest.cs" />
     <Compile Include="Discount.cs" />
     <Compile Include="Person.cs" />
+    <Compile Include="PersonTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
